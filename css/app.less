@@ -1,0 +1,116 @@
+@color: #5b4182;
+//设置字体样式
+body {
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+.header {
+	margin-bottom: 0;
+	a {
+		color: @color;
+		cursor: pointer;
+	}
+	ul a:hover,
+	ul .choose a {
+		background: #f3f3f3 !important;
+	}
+}
+/*定义首页banner样式*/
+.banner {
+	background: @color;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	color: #fff;
+	.banner-b-logo {
+		text-align: center;
+		width: 160px;
+		margin: 0 auto;
+		height: 160px;
+		line-height: 160px;
+		font-size: 120px;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		margin-bottom: 50px;
+	}
+	h2 {
+		width: 800px;
+		margin: 0 auto;
+		line-height: 50px;
+	}
+	.btn-outline {
+		border: 1px solid #fff;
+		font-size: 20px;
+		margin: 40px auto 30px;
+	}
+	.btn-outline:hover {
+		color: @color;
+		background: #fff;
+	}
+	.app-version {
+		color: darken(@color, 10%);
+	}
+}
+.app-banner {
+	text-align: left;
+	padding: 60px 0;
+	h1 {
+		font-size: 60px;
+	}
+	p {
+		font-size: 26px;
+		color: lighten(@color, 30%)
+	}
+}
+.first-list {
+	padding-top: 100px;
+	text-align: center;
+	padding-bottom: 100px;
+	border-bottom: 1px solid #ccc;
+	h2 {
+		font-size: 40px;
+	}
+	.intro {
+		font-size: 26px;
+		color: #666;
+		margin-bottom: 80px;
+	}
+	img {
+		width: 100%;
+	}
+	.row {
+		p {
+			font-size: 16px;
+		}
+	}
+	.description {
+		font-size: 26px;
+		margin: 80px auto 20px;
+	}
+	.btn {
+		border: 1px solid @color;
+		color: @color;
+		&:hover {
+			color: #fff;
+			background: @color;
+		}
+	}
+}
+.second-list {
+	.first-list;
+}
+.aside {
+	padding-top: 60px;
+	a {
+		color: #666;
+		border-left: 1px solid transparent;
+		padding-left: 20px;
+		&:hover {
+			background: #fff !important;
+		}
+	}
+	.choose a,
+	a:hover {
+		color: @color;
+		border-left: 1px solid @color;
+	}
+}
